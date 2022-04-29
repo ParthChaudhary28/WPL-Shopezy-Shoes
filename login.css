@@ -1,0 +1,219 @@
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background:#247B85; */
+}
+
+.new{
+    position: absolute;
+    right: 11%;
+    top: 8%;
+
+}
+.white2{
+    display: none;
+}
+.new h2{
+    color: #247B85;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+.new button{
+    border: #247B85 2px solid;
+    color: #247B85;
+    font-weight: bold;
+    border-radius: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-transform: uppercase;
+   position: absolute;
+   left: 15%;
+}
+.bgimg{
+   position: absolute;
+   right: 13%;
+   bottom: 0%;
+
+}
+
+.left img{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.left h2{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    font-size: 50px;
+}
+.input-container1 {
+    padding: 1%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.938);
+    border-radius: 50px;
+
+}
+.input-container2 {
+    padding: 1%;
+    position: absolute;
+    top: 53%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.938);
+    border-radius: 50px;
+
+}
+
+  .icon {
+    color:#247b85be;
+    min-width: 50px;
+    text-align: center;
+
+  }
+
+  .input-field {
+    width: 400px;
+    background: none;
+    border: none;
+  }
+  .input-container1:hover {
+    background: #cedcdd7c;
+    border: solid 2px white;
+    transition: 1s;
+  }
+  .input-container2:hover {
+    background: #cedcdd7c;
+    border: solid 2px white;
+    transition: 1s;
+  }
+.left button{
+    position: absolute;
+    left: 20%;
+    top: 68%;
+    width: 150px;
+    color: #247B85;
+    background: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.left h4{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 75%;
+    left: 16%;
+    font-size: 20px;
+}
+.google {
+
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 23%;
+    padding: 0.5%;
+    border: white solid 1px;
+    border-radius: 200px;
+}
+.left a{
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+   text-decoration: underline;
+}
+@media only screen and (max-width: 1197px) {
+    .bgimg{
+        display: none;
+    }
+    .new{
+        position: absolute;
+        left: 22%;
+        top: 10%;
+
+    }
+    .new h2{
+        color: #247B85;
+        font-weight: bold;
+        letter-spacing: 7px;
+    }
+    .left img{
+        position: absolute;
+        top: 28%;
+        left: 40%;
+    }
+    .left h2{
+        position: absolute;
+        top: 43%;
+        left: 40%;
+        font-size: 15px;
+    }
+    .input-container1 {
+        padding: 0.6%;
+        position: absolute;
+        top: 47%;
+        left: 15%;
+        width: 70%;
+        height: 45px;
+    }
+    .input-container2 {
+        padding: 0.5%;
+        position: absolute;
+        top: 55%;
+        left: 15%;
+        width: 70%;
+        height: 45px;
+    }
+    .input-field{
+        position: relative;
+        top: 7%;
+        left: 5%;
+        width: 70%;
+        height: 70%;
+    }
+    .input-field:checked{
+        border: none;
+    }
+    .icon{
+        position: relative;
+        top: 14%;
+    }
+    .left button{
+        position: absolute;
+        left: 30%;
+        top: 65%;
+        width: 150px;
+    }
+    .left h4{
+        position: absolute;
+        top: 75%;
+        left: 20%;
+        font-size: 20px;
+    }
+    .google {
+        position: absolute;
+        top: 80%;
+        left: 47%;
+    }
+    .left a{
+        position: absolute;
+        top: 85%;
+        left: 30%;
+
+    }
+    .white1{
+        display: none;
+    }
+    .white2{
+        display: flex;
+    }
+
+  }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Admin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</head>
+<body>
+    
+    <form method='post' action='Admin.php' class="add">
+        <h2>Add a product</h2>
+        <div class="container 1">
+        <input class="input-field" type="text" placeholder="Productid" name="Productid" >
+        </div><br></br>
+         <div class="container 2">
+            <input class="input-field" type="text" placeholder="ProductName" name="Name" >
+            </div><br></br>
+            <!-- <div class="container 3" label for="Img">   -->
+                <label for="Img">Select image</label>
+                <input  type="file"  name="Img" id="img" accept="image/*" >
+                </div><br></br>
+            <div class="container 4">
+                <input class="input-field" type="number" placeholder="Price" name="Price" >
+                </div><br></br>
+                <div class="container 5">
+                    <input class="input-field" type="text" placeholder="Discount" name="Discount" >
+                    </div><br></br>
+                    <div class="container 6">
+                        <input class="input-field" type="text" placeholder="Description" name="Description" >
+                        </div><br></br>
+                           <div class="container 7">
+                            <input class="btn btn-primary" type="submit" value="Submit">
+                                
+                                </div><br></br>
+
+                                
+                           
+                               
+<br>
+    
+ 
+
+</body>
+</html>
+<script>
+    $(function(){
+        $('.add').on('submit', function(event){
+            event.preventDefault();
+            var fileInput = document.getElementById('img');
+            var reader = new FileReader();
+            reader.readAsDataURL(fileInput.files[0]);
+            var form1 =this;
+            reader.onload = function () {
+                $(form1).append('<input type="hidden" name="image" value='+reader.result+'>');
+                form1.submit();
+            };
+        });
+    });
+    </script>
